@@ -25,4 +25,5 @@ MongoClient.connect(process.env.MONGODB_URI, {
       patchVersion
     );
     console.log(insertChampions);
+    process.exit(0);
   });

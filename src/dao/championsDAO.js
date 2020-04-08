@@ -16,7 +16,7 @@ class ChampionsDAO {
   static async update(insertChampions) {
     try {
       const result = await champions.insertMany(insertChampions);
-      console.log(result.result);
+      console.log(result);
       return { success: true };
     } catch (e) {
       console.error(`Error occurred while inserting data, ${e}`);
